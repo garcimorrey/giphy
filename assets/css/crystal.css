@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+img {
+    margin-top: 30px;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    border: solid 5px black;
+}
+
+.main { 
+    background: lightgrey;
+}
+
+.scoretarget {
+    margin-top: 30px;
+    margin-left: 20px;  
+    padding: 30px;
+    border: solid 5px black;
+    font-weight: bold;
+    font-size: 1.5em
+}
+
+.result {
+    margin-top: 30px;
+    padding: 30px;
+    border: solid 5px black;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+}
+
+#restart {
+    width: 200px;
+    height: 70px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    border: solid 5px yellow;
+}
+
+#restart:hover {
+width: 220px;
+height: 80px;
+color: black;
+background: yellow;
+}

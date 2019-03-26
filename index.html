@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/crystal.css">
+        <title>Crystal Game</title>
+    </head>
+    <body>
+
+        <div class="container text-center main">
+           <div class="row">
+               <div class="col-md-2"></div>
+               <div class="col-md-8">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by exactly matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+               </div>
+           </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 crystal" id="crystal1"><img src="assets/images/blackdiamond.png"></div>
+                    <div class="col-md-2 crystal" id="crystal2"><img src="assets/images/bluediamond.png"></div>
+                    <div class="col-md-2 crystal" id="crystal3"><img src="assets/images/greendiamond.png"></div>
+                    <div class="col-md-2 crystal" id="crystal4"><img src="assets/images/yellowdiamond.png"></div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 scoretarget"><p>Target: <span id="randomNumber"></span></div>
+                <div class="col-md-4 scoretarget"><p>Your score so far: <span id="currentScore"></span></div>
+            </div>
+        </div>
+
+        <div class="container text-center result">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h4> Wins: <span id="wins">0</span></h4>
+                    <h4> Losses: <span id="losses">0</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="restart">Restart  </button>
+                </div>
+            </div>
+        </div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="assets/javascript/crystal.js"></script>
+    </body>
+</html>
